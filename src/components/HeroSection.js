@@ -8,7 +8,10 @@ function HeroSection() {
     <div className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
       <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+      <p></p>
+      <p>Are you a new citizen in the capital?</p>
+      <p>Do you want to use public transport?</p>
+      <h2>This website is designed for you to provide you with all the necessary information about the public transport of all four cities of the Tunisian capital. Tunis.</h2>
       <div className='hero-btns'>
         <Button
           className='btns'
