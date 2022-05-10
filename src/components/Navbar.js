@@ -60,10 +60,8 @@ function Navbar() {
                 onClick={closeMobileMenu}>
 
 
-<nav>
-   <ul className="menus">
-    Nav Items here
-   </ul>
+            <nav>
+
   </nav>
 
 

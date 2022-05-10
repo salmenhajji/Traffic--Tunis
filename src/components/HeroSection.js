@@ -6,13 +6,11 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      // eslint-disable-next-line jsx-a11y/alt-text
-      // eslint-disable-next-line jsx-a11y/alt-text
-      <img src='/images/tunis.jpg' autoPlay loop muted />
+ 
+      <video src='/videos/traffic1.mp4' autoPlay loop muted />
       <h1>ADVENTURE AWAITS</h1>
-      <p></p>
-      <p>Are you a new citizen in the capital?</p>
-      <p>Do you want to use public transport?</p>
+      <p>Are you a new citizen in the capital?  Do you want to use public transport?</p>
+      
       <h2>This website is designed for you to provide you with all the necessary information about the public transport of all four cities of the Tunisian capital. Tunis.</h2>
       <div className='hero-btns'>
         <Button
