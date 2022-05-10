@@ -6,7 +6,9 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+      // eslint-disable-next-line jsx-a11y/alt-text
+      // eslint-disable-next-line jsx-a11y/alt-text
+      <img src='/images/tunis.jpg' autoPlay loop muted />
       <h1>ADVENTURE AWAITS</h1>
       <p></p>
       <p>Are you a new citizen in the capital?</p>
