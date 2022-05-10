@@ -60,7 +60,7 @@ function Navbar() {
                 onClick={closeMobileMenu}>
                 Cities
                 <ul>
-						  <li><Link to={`/Online`} onClick={closeMobileMenu}> Online </Link> </li>
+						  <li><NavLink to={`/Online`} onClick={closeMobileMenu}> Online </NavLink> </li>
 						  <li><NavLink to={`/Offline`}> Offline </NavLink> </li>
 					  </ul>
               </Link>
