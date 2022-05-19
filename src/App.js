@@ -7,6 +7,7 @@ import Services from './components/pages/Services';
 import menuItems from './components/pages/menuItems';
 import SignUp from './components/pages/SignUp';
 import Cities from './components/pages/Cities';
+import Ariana from './components/pages/Ariana';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path='/services' component={Services} />
           <Route path='/Cities' component={Cities} />
           <Route path='/sign-up' component={SignUp} />
+          <Route path='/Ariana' component={Ariana} />
+         <Route path='/menuItems' component={menuItems} />
         </Switch>
       </Router>
     </>

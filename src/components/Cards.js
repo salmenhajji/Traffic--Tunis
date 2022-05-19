@@ -27,7 +27,7 @@ function Cards() {
               src='https://lh5.googleusercontent.com/p/AF1QipMLYjXz85c3Lz1C4PTh5295OpuJklTW4oUb3xI=w203-h114-k-no'
               text='Explore the hidden waterfall deep inside the Amazon Jungle'
               label='Ariana'
-              path='/services'
+              path='/Ariana'
             />
             <CardItem
               src='https://i.pinimg.com/originals/72/be/9e/72be9e16a175aa527328298508214a01.jpg'
