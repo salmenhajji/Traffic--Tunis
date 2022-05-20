@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import {NavLink} from 'react-router-dom';
+import { menuItems } from "./pages/menuItems";
 import './Navbar.css';
-
+import Dropdown from 'react-multilevel-dropdown';
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -82,8 +83,34 @@ function Navbar() {
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
+
+
+      <nav>
+   <ul className="menus">
+    {menuItems.map((menu, index) => {
+     return (
+      <li className="menu-items" key={index}>
+       <a href="/#">{menu.title}</a>
+      </li>
+     );
+    })}
+   </ul>
+  </nav>
+
+
+
+
+
+
+
+
+
     </>
-  );
+ 
+ 
+
+
+ );
 }
 
 export default Navbar;
