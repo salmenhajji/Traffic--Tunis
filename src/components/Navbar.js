@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import {NavLink} from 'react-router-dom';
-import { menuItems } from "./pages/menuItems";
+import { NavLink } from 'react-router-dom';
+
 import './Navbar.css';
-import Dropdown from 'react-multilevel-dropdown';
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -42,6 +41,11 @@ function Navbar() {
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
+
+
+              <li><NavLink to={`/Online`} className='nav-links' onClick={closeMobileMenu}> Online </NavLink> </li>
+              <li><NavLink to={`/Offline`} className='nav-links' > Offline </NavLink> </li>
+
             </li>
 
             <li className='nav-item'>
@@ -51,20 +55,25 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Services
+               
               </Link>
+            
+
             </li>
+
+
 
             <li className='nav-item'>
               <Link
-                to='/cities'
+                to='/services'
                 className='nav-links'
-                onClick={closeMobileMenu}>
+                onClick={closeMobileMenu}
+              >
                 Cities
-                <ul>
-						  <li><NavLink to={`/Online`} onClick={closeMobileMenu}> Online </NavLink> </li>
-						  <li><NavLink to={`/Offline`}> Offline </NavLink> </li>
-					  </ul>
               </Link>
+            </li>
+            <li className='nav-item'>
+
 
 
             </li>
@@ -85,19 +94,6 @@ function Navbar() {
       </nav>
 
 
-      <nav>
-   <ul className="menus">
-    {menuItems.map((menu, index) => {
-     return (
-      <li className="menu-items" key={index}>
-       <a href="/#">{menu.title}</a>
-      </li>
-     );
-    })}
-   </ul>
-  </nav>
-
-
 
 
 
@@ -106,11 +102,11 @@ function Navbar() {
 
 
     </>
- 
- 
 
 
- );
+
+
+  );
 }
 
 export default Navbar;
